@@ -9,25 +9,25 @@
 </head>
 <body>
     <div id="calculator">
-        <div id="display"></div>
+        <input id="display" readonly>
 
         <div id="buttonsDiv">
-            <button class="buttons digit">7</button>
-            <button class="buttons digit">8</button>
-            <button class="buttons digit">9</button>
-            <button class="buttons digit">4</button>
-            <button class="buttons digit">5</button>
-            <button class="buttons digit">6</button>
-            <button class="buttons digit">1</button>
-            <button class="buttons digit">2</button>
-            <button class="buttons digit">3</button>
-            <button class="buttons digit">0</button>
-            <button class="buttons op">+</button>
-            <button class="buttons op">-</button>
-            <button class="buttons op">*</button>
-            <button class="buttons op">/</button>
-            <button class="buttons op">=</button>
-            <button class="buttons clear">C</button>
+            <button class="buttons digit" onclick="addToScreen('7')">7</button>
+            <button class="buttons digit" onclick="addToScreen('8')">8</button>
+            <button class="buttons digit" onclick="addToScreen('9')">9</button>
+            <button class="buttons digit" onclick="addToScreen('4')">4</button>
+            <button class="buttons digit" onclick="addToScreen('5')">5</button>
+            <button class="buttons digit" onclick="addToScreen('6')">6</button>
+            <button class="buttons digit" onclick="addToScreen('1')">1</button>
+            <button class="buttons digit" onclick="addToScreen('2')">2</button>
+            <button class="buttons digit" onclick="addToScreen('3')">3</button>
+            <button class="buttons digit" onclick="addToScreen('0')">0</button>
+            <button class="buttons op" onclick="addToScreen('+')">+</button>
+            <button class="buttons op" onclick="addToScreen('-')">-</button>
+            <button class="buttons op" onclick="addToScreen('*')">*</button>
+            <button class="buttons op" onclick="addToScreen('/')">/</button>
+            <button class="buttons op" onclick="calculate()" value="=">=</button>
+            <button class="buttons clear" onclick="clearScreen()" id="clearButton">C</button>
         </div>
     </div>
 </body>

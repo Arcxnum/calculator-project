@@ -14,8 +14,12 @@
     height: 200px;
     border-style: solid;
     border-radius: 50px;
+    border-color: gray;
     color: white;
     background-color: gray;
+    font-size: 5em;
+    font-family: sans-serif, Helvetica, Arial;
+    text-align: center;
 }
 
 .buttons {
