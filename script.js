@@ -38,7 +38,6 @@ function calculate() {
     if (expression === "") {
         return; 
     }
-
   
     const tokens = expression.split(/([+-/*])/);
 
@@ -65,9 +64,9 @@ function calculate() {
             break;
         case "/":
             number1 = divide(number1, number2);
-            break;
+            break; 
         default:
-            display.value = "Error: Invalid operator"; // Display error for invalid operator
+            display.value = "Really?"; // Display error for invalid operator
             return;
     }
   }
