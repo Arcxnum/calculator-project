@@ -49,29 +49,29 @@ function calculate() {
     // Process the tokens
     number1 = parseFloat(tokens[0]); // Convert first token to number
     for (let i = 1; i < tokens.length; i += 2) {
-    const operator = tokens[i];
-    const number2 = parseFloat(tokens[i + 1]); // Convert next token to number
+        const operator = tokens[i];
+        const number2 = parseFloat(tokens[i + 1]); // Convert next token to number
 
-    switch (operator) {
-        case "+":
-            number1 = add(number1, number2);
-            break;
-        case "-":
-            number1 = subtract(number1, number2);
-            break;
-        case "*":
-            number1 = multiply(number1, number2);
-            break;
-        case "/":
-            number1 = divide(number1, number2);
-            break; 
-        default:
-            display.value = "Really?"; // Display error for invalid operator
-            return;
+        switch (operator) {
+            case "+":
+                number1 = add(number1, number2);
+                break;
+            case "-":
+                number1 = subtract(number1, number2);
+                break;
+            case "*":
+                number1 = multiply(number1, number2);
+                break;
+            case "/":
+                number1 = divide(number1, number2);
+                break; 
+            default:
+                display.value = "Really?"; // Display error for invalid operator
+                return;
+        }
     }
-  }
 
-  // Update the display with the calculated result
-  display.value = number1;
-  number2 = undefined; // Reset number2 for the next calculation
+    // Update the display with the calculated result
+    display.value = number1;
+    number2 = undefined; // Reset number2 for the next calculation
 }
